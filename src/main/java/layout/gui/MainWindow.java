@@ -119,7 +119,8 @@ public class MainWindow extends JFrame {
         btnClose.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.exit(0);
+                JFrame frame = new CanvasWindow();
+                frame.setVisible(true);
             }
         });
     }
